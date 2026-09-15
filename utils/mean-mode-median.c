@@ -3,7 +3,8 @@
 //Built in function to calculate the size of the array
 int array_limit (float arr[])
 {
-    return sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
+    return size;
 }
 
 // calculate the mean of the array

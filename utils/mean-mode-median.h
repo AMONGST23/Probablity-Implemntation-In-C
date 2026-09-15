@@ -2,9 +2,9 @@
 #ifndef MEAN_MODE_MEDIAN_H
 #define MEAN_MODE_MEDIAN_H
 
-float calc_mean (float arr[]);
-int array_limit (float arr[]);
-float calc_median (float arr[]);
-float calc_mode (float arr[]);
+float calc_mean(float arr[]);
+int array_limit(float arr[]);
+float calc_median(float arr[]);
+float calc_mode(float arr[]);
 
-#endif
+#endif // MEAN_MODE_MEDIAN_H

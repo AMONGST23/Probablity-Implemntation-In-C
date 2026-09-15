@@ -7,9 +7,10 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/src/main.c",
+                "${workspaceFolder}/utils/mean-mode-median.c",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/src/main"
             ],
             "options": {
                 "cwd": "${fileDirname}"
