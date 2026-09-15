@@ -1,4 +1,4 @@
-#include <math.h>
+#include "mean-mode-median.h"
 
 //Built in function to calculate the size of the array
 int array_limit (float arr[])
