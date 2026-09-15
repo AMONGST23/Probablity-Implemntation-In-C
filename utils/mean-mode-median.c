@@ -48,7 +48,7 @@ float calc_mode(float arr[]){
             if (arr[i] == arr[j]){
                 count++;
                 if (count > limit / 2){
-                    return arr[i], max_count = count; //return the mode and the count of the mode
+                    return max_count = count; //return the mode and the count of the mode
                 }else if (count > max_count){ //update count if the current count is greater than the max count
                     max_count = count;
                 }

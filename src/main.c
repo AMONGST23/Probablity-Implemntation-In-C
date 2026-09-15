@@ -17,11 +17,12 @@ int main(){
     //populating the array with random numbers
     for (int i = 0; i < size; i++){
         arr[i] = (rand()%(upper_limit - lower_limit + 1)) + lower_limit; //generating random numbers within the defined limits
+        printf("%.2f ", arr[i]); //printing the random numbers generated
     }
 
     //call functions from mean-mode-median.c to calculate mean, median, and mode
     float mean = calc_mean(arr);
-    printf("Mean: %.2f\n", mean);
+    printf("\nMean: %.2f\n", mean);
 
     float median = calc_median(arr);
     printf("Median: %.2f\n", median);
