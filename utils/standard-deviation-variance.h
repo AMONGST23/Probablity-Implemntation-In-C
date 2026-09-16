@@ -5,6 +5,6 @@
 #ifndef STANDARD_DEVIATION_H
 #define STANDARD_DEVIATION_H
 
-float calc_variance(float arr[], int limit);
-float calc_standard_deviation(float arr[], int limit);
+float calc_variance(float arr[], int limit, float mean);
+float calc_standard_deviation(float arr[], int limit, float mean);
 #endif
