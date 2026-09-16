@@ -1,16 +1,15 @@
 #include "mean-mode-median.h"
 
 //Built in function to calculate the size of the array
-int array_limit (float arr[])
-{
-    int size = sizeof(arr) / sizeof(arr[0]);
-    return size;
-}
+// int array_limit (float arr[])
+// {
+//     int size = sizeof(arr) / sizeof(arr[0]);
+//     return size;
+// }
 
 // calculate the mean of the array
-float calc_mean (float arr[]){
+float calc_mean (float arr[], int limit){
     float sum = 0.0;
-    int limit = array_limit(arr);
     // Cycle through the elemnts and add them to the sum
     for (int i = 0; i < limit; i++){
         sum = sum + arr[i]; 
@@ -18,9 +17,8 @@ float calc_mean (float arr[]){
     return sum / limit;
 }
 
-float calc_median(float arr[]){
+float calc_median(float arr[], int limit){
     //sort the array using buble sort
-    int limit = array_limit(arr);
     for (int i = 0; i < limit - 1; i++){
         for (int j = 0; j < limit - i - 1; j++){
             if (arr[j] > arr[j + 1]){
@@ -37,8 +35,7 @@ float calc_median(float arr[]){
     }
 }
 
-float calc_mode(float arr[]){
-    int limit = array_limit(arr);
+float calc_mode(float arr[], int limit){
     int max_count = 0; //initializing the max count value for the mode
     int count = 0; //count value within the array
 
