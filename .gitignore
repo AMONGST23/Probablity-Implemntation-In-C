@@ -1,0 +1,9 @@
+# Compiled executable
+/src/main
+
+# C build artifacts
+*.o
+*.out
+
+# VS Code local settings
+.vscode/
